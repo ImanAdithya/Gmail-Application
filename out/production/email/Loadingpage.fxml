@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="LoadingContext" prefHeight="542.0" prefWidth="861.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoadingpageController">
+   <children>
+      <ImageView fitHeight="539.0" fitWidth="861.0" pickOnBounds="true">
+         <image>
+            <Image url="@LoadingPhoto.jpg" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="loadProgress" layoutX="275.0" layoutY="192.0" prefHeight="10.0" prefWidth="311.0" progress="0.0" />
+      <Label fx:id="lblLoad" layoutX="596.0" layoutY="192.0" prefHeight="20.0" prefWidth="47.0" textFill="#d72222">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

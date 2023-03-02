@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainFormContext" prefHeight="526.0" prefWidth="780.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainFormController">
+    <children>
+        <Label layoutX="44.0" layoutY="92.0" text="FROM">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="44.0" layoutY="137.0" text="TO">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <Label layoutX="44.0" layoutY="184.0" prefHeight="30.0" prefWidth="107.0" text="SUBJECT">
+            <font>
+                <Font size="25.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtFrom" layoutX="169.0" layoutY="94.0" prefHeight="27.0" prefWidth="549.0" />
+        <TextField fx:id="txtTo" layoutX="169.0" layoutY="140.0" prefHeight="27.0" prefWidth="549.0" />
+        <TextField fx:id="txtSubject" layoutX="169.0" layoutY="186.0" prefHeight="27.0" prefWidth="549.0" />
+        <TextArea fx:id="textArea" layoutX="45.0" layoutY="245.0" prefHeight="200.0" prefWidth="676.0" promptText="TEXT HERE...." />
+        <JFXButton buttonType="RAISED" layoutX="679.0" layoutY="474.0" onAction="#SendOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #48dbfb;" text="SEND" textFill="#2c2929" />
+        <JFXButton buttonType="RAISED" layoutX="576.0" layoutY="474.0" onAction="#ClearOnAction" prefHeight="30.0" prefWidth="90.0" style="-fx-background-color: #44bd32;" text="CLEAR" textFill="#fcf1f1" />
+        <ImageView fitHeight="40.0" fitWidth="33.0" layoutX="21.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@gmail%20(1).png" />
+            </image>
+        </ImageView>
+        <Label layoutX="71.0" layoutY="14.0" text="GMAIL SENDER" textFill="#c91010">
+            <font>
+                <Font name="System Bold" size="28.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
